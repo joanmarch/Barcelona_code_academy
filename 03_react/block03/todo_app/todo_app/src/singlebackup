@@ -1,0 +1,156 @@
+import React from 'react'
+import Delete from './image/delete.png';
+
+class DisplayTodos extends React.Component{
+    state={
+        deletevisible : false
+    }
+
+handleMouseEnter =() =>{
+   
+            this.setState ({
+            deletevisible : true
+        })
+}
+
+handleMouseLeave = () =>{
+    this.setState ({
+        deletevisible : false
+    })
+}
+
+handleClick = (event) => {
+    debugger
+    this.props.deletedata(event.target.id);
+}
+
+render(){
+
+    return(
+        <li onMouseEnter = {this.handleMouseEnter} onMouseLeave ={this.handleMouseLeave} >
+         {this.state.deletevisible ? <img id={this.props.id}  onClick = {this.handleClick} style = {styles.img} src={Delete}/> : null}
+         <span ><h1 style={styles.h1}>{this.props.todo}</h1></span>
+        </li>
+    )
+}
+}
+
+const styles ={
+    img:{
+        width: '30px',
+        height : '30px',
+      
+    },
+    h1:{
+        display : 'inline'
+    },
+  
+}
+
+export default DisplayTodos
+
+
+class DisplayTodos extends React.Component{
+ 
+looperTodos = () =>{
+    let deletedata = this.props.getDataDelete
+   return(
+    this.props.todos.map((todo,i)=>(
+      <SingleTodo id={i} todo = {todo}/>    
+    )))
+    }
+
+
+render(){
+
+    return(
+       <ul style={styles.ul}>
+            {this.looperTodos()}
+       </ul>
+       
+    )
+}
+}
+
+const styles = {
+    ul:{
+        listStyle : 'none'
+    }
+}
+
+
+
+export default DisplayTodos
+
+
+import React from 'react'
+import Delete from './image/delete.png';
+//import SingleTodo from './SingleTodo'
+
+class DisplayTodos extends React.Component{
+
+    state={
+        deletevisible : false
+    }
+
+looperTodos = () =>{
+
+   return(
+    this.props.todos.map((todo,i)=>(
+        <li key={i} onMouseEnter = {this.handleMouseEnter} onMouseLeave ={this.handleMouseLeave} >
+         {this.state.deletevisible ? <img id={i}  onClick = {this.handleClick} style = {styles.img} src={Delete}/> : null}
+         <h1 style={styles.h1}>{todo}</h1>
+        </li>
+      //<SingleTodo id={i} todo = {todo}/>    
+    )))
+    }
+
+handleMouseEnter =() =>{
+   
+            this.setState ({
+            deletevisible : true
+        })
+}
+
+handleMouseLeave = () =>{
+    this.setState ({
+        deletevisible : false
+    })
+}
+
+handleClick = (event) => {
+    this.props.getDataDelete(event.target.id);
+}
+
+
+render(){
+
+    return(
+       <ul style={styles.ul}>
+            {this.looperTodos()}
+       </ul>
+       
+    )
+}
+}
+
+const styles = {
+    ul:{
+        listStyle : 'none'
+    },
+    img:{
+        width: '30px',
+        height : '30px',
+      
+    },
+    h1:{
+        display : 'inline'
+    },
+    invisible:{
+        display : 'none'
+    }
+}
+
+
+
+export default DisplayTodos

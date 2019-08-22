@@ -1,0 +1,109 @@
+.wrapper {
+  
+  z-index: 100;
+  border: 3px solid #f2f2f2;
+  margin-top: 20px;
+  padding: 0 40px 40px;
+  box-sizing: border-box;
+  max-width: 800px;
+  width: 80vw;
+  margin: 0 auto;
+
+}
+
+.flexcontainer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap : wrap;
+  
+}
+
+.image {
+  width: 80%;
+  height: 50%
+}
+
+.flexitem {
+  flex: 1 1 100px;
+  position: relative;
+}
+
+.nav-bar{
+
+  padding-left: 40px;
+  padding-bottom: 15px;
+  margin-top: 5px;
+  border-bottom: 3px solid #f2f2f2;
+  margin-left: -40px;
+  margin-bottom: 40px;
+  margin-right: -40px;
+  
+}
+
+.flexitem h5{
+  font-size: 18px;
+    font-family: Georgia, Utopia, 'Times New Roman', Times, serif;
+    line-height: 28px;
+    display: block;
+    font-style: italic;
+    text-align: left;
+    color: #000000;
+    border-bottom: 3px solid #f1f1f1;
+    padding: 10px 2px 5px;
+    margin-bottom: 10px;
+    margin-top:0px;
+}
+
+.price{
+  margin-left: 12px;
+    color: #5ae98a;
+    font-weight: 400;
+    font-style: italic;
+    text-align: left;
+   
+}
+
+
+.nav-bar li{
+  width: 20%;
+  float: left;
+  list-style-type: none;
+  display: list-item;
+  text-align: -webkit-match-parent;
+  
+}
+
+.onsaleImage {
+  width: 33%;
+  height: 10%;
+  position: absolute;
+  left: 55%;
+  top : -15px;
+}
+
+
+ .nav-bar a{
+    padding-top: 7px;
+    padding-bottom: 7px;
+    margin-right: 20px;
+    margin-left: 0;
+    margin-top: 2px;
+    text-transform: uppercase;
+    letter-spacing: 0em;
+    word-spacing: 0em;
+    font: "Comic Sans MS", cursive, serif;
+    display: block;
+    text-decoration: none !important;
+    
+}
+
+a:link{
+  color: black;
+  font-weight: 900;
+}
+
+.clearfix {
+  clear: both;
+}
+
+

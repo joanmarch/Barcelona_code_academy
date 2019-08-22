@@ -1,0 +1,188 @@
+.wrapper {
+    background-color: white;
+    margin: 0 auto;
+    max-width: 1300px;
+  }
+  
+  nav {
+    background-color: black;
+  }
+
+ 
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .main-nav-right li {
+    
+    width: 10%;
+    float: right;
+    text-align: center;
+    
+  }
+  
+  .main-nav-left li {
+    
+    width: 10%;
+    float: left;
+    text-align: center;
+    
+  
+  }
+  
+  nav a:link, nav a:visited {
+    padding: 10px;
+  display: block;
+  text-decoration: none;
+  color:white;
+
+  }
+
+  #dearBeer{
+    position: relative;
+    
+  }
+
+
+  #dearBeer img{
+    width: 100%;
+  }
+
+  #dearBeer h2{
+    position: absolute;
+    color:white;
+    top: 30%;
+    left: 30%;
+    font-size: 4vw;
+  }
+
+  #dearBeer h3{
+    position: absolute;
+    color:white;
+    top: 40%;
+    left: 38%;
+    font-size: 4vw;    
+  }
+
+  #dearBeer p{
+    position: absolute;
+    color:white;
+    top: 55%;
+    left: 40%;
+    font-size: 2vw;
+    border: 1px white solid;
+    background-color: rgb(37, 34, 34);
+    padding: 0.7em;
+    opacity: 0.8;
+  }
+
+#location{
+text-align: center;
+}
+
+#location h2{
+    margin: 0px;
+    padding: 10px;
+}
+
+#location p{
+    margin: 0px;
+    padding: 10px;
+    text-align: left;
+}
+
+#gallery {
+    text-align: center;
+}
+
+#gallery a {
+    margin: 15px;
+    padding: 10px;
+}
+
+
+#gallery ul li {
+    
+    width: 33.3%;
+    float: left;    
+  }
+
+  #gallery ul li img {
+    width: 100%;
+     
+  }
+
+  #gallery img {
+    width: 100%;
+     
+  }
+
+  #beer{
+    text-align: center;
+   
+  }
+
+  #beer table{
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  table img{
+    width: 100%;
+  }
+
+  td{
+    padding: 10px;
+   
+  }
+
+  td p {
+    text-align: left;
+  }
+
+  #team{
+    text-align: center;
+  }
+
+  #team table{
+    width: 100%;
+  }
+
+ 
+.main-footer{
+  text-align: center;
+  background-color: black;
+  color: white;
+}  
+
+@media screen and (min-width: 1200px) {
+  #dearBeer h2{
+    font-size: 48px;
+  }
+
+  #dearBeer h3{
+    font-size: 48px;  
+  }
+
+  #dearBeer p{
+    font-size: 24px; 
+  }
+}
+
+  
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  html {
+    box-sizing: border-box;
+    background-color: rgb(37, 34, 34)
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
