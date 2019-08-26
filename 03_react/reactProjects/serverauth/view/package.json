@@ -1,15 +1,17 @@
 {
-  "name": "slideshow",
+  "name": "view",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "axios": "^0.19.0",
+    "bcrypt": "^3.0.6",
+    "crypto-js": "^3.1.9-1",
+    "material-ui": "^0.20.2",
+    "node-gyp": "^5.0.3",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
-    "react-flip-move": "^3.0.3",
-    "react-id-swiper": "^2.3.2",
-    "react-image-gallery": "^0.9.0",
-    "react-responsive-carousel": "^3.1.50",
-    "react-scripts": "3.1.0"
+    "react-scripts": "3.1.1",
+    "react-tap-event-plugin": "^3.0.3"
   },
   "scripts": {
     "start": "react-scripts start",
