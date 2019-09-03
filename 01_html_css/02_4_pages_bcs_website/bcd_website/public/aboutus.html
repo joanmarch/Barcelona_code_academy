@@ -26,6 +26,11 @@
        work correctly both with client-side routing and a non-root public URL.
        Learn how to configure a non-root public URL by running `npm run build`.
      -->
+            <!-- Load React. -->
+  <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  
     </head>
     <body>
         <div class= "wrapper">
@@ -41,7 +46,7 @@
                     <div class="single-grid">
                        <h2>THIS IS OUR CAMPUS</h2>
                      </div>
-                     <div class="single-grid">
+                     <div class="single-grid">                       
                         <img src= "../images/campus1.jpg" alt="Our campus images" width=100% height=100%>
                      </div>
              </div>
@@ -49,7 +54,7 @@
              <div class="inner-grid-1-1-1">
                     <div class="single-grid">
                        <h2>THIS IS US</h2>
-                       <div id="dropDrownAboutus"></div>
+                       <div id="campusPictures"></div>
                      </div>
                      <div class="single-grid">
                         <img src= "../images/Us1.jpg" alt="This is us images" width=100% height=100%>
@@ -89,5 +94,8 @@
 
              </footer>
         </div>
+        <script src="like_button.js"></script>
+        <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
     </body>
 </html>

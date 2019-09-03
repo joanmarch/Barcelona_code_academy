@@ -11,4 +11,4 @@ class AboutUs extends React.Component{
     }
 }
 
-ReactDOM.render(<AboutUs />, document.getElementById('dropDownAboutus'));
+ReactDOM.render(<AboutUs />, document.getElementById('campusPicture'));

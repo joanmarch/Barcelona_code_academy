@@ -1,13 +1,21 @@
 {
-  "name": "bcd_website",
+  "name": "view",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-react-app": "^3.1.2",
+    "@material-ui/core": "^4.3.3",
+    "@material-ui/icons": "^4.2.1",
+    "axios": "^0.19.0",
+    "bcryptjs": "^2.3.0",
+    "crypto-js": "^3.1.9-1",
+    "material-ui": "^0.20.2",
+    "node-gyp": "^5.0.3",
+    "node-sass": "^4.12.0",
     "react": "^16.9.0",
+    "react-custom-scrollbars": "^4.2.1",
     "react-dom": "^16.9.0",
-    "react-scripts": "3.1.1"
+    "react-scripts": "3.1.1",
+    "react-tap-event-plugin": "^3.0.3"
   },
   "scripts": {
     "start": "react-scripts start",
